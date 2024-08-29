@@ -39,6 +39,7 @@ int main() {
     // Initialize the mutex with priority inheritance
     pthread_mutexattr_t attr;
     pthread_mutexattr_init(&attr);
+    
     pthread_mutexattr_setprotocol(&attr, PTHREAD_PRIO_INHERIT);
     pthread_mutex_init(&mutex, &attr);
 
