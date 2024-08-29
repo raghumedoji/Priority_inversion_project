@@ -6,7 +6,7 @@
 // Define a global mutex
 pthread_mutex_t mutex;
 
-// Define the high-priority, medium-priority, and low-priority threads
+// high-priority, medium-priority, and low-priority threads
 void* high_priority_thread(void* arg) {
     pthread_mutex_lock(&mutex);
     printf("High Priority Thread: Locked mutex, performing work...\n");
