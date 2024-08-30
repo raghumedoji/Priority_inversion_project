@@ -9,7 +9,7 @@ M is running and holding the mutex.
 L starts running and consumes CPU time.
 M finishes its work but H still cannot run because L is using the CPU.
 
-Here, L's execution indirectly prevents H from making progress, creating a priority inversion.
+So here, L's execution indirectly prevents H from making progress, creating a priority inversion.
 
 Techniques to Handle Priority Inversion
 
